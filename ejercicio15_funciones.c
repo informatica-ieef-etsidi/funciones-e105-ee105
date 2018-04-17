@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-/*15. Hacer un programa que determine el m·ximo com˙n divisor de dos n˙meros enteros ìaî y ìbî  que  se  solicitan  al  usuario  por  teclado
-desde  el main().Dichos  n˙meros  ser·n  pasados  a una  funciÛn,  que  retorna  el  MCD  de  ambos,  y  el main() se  encarga  de  sacar  el  resultado  por pantalla. Si uno de los dos n˙meros es negativo, se muestra un mensaje de error y no se invoca la funciÛn:
+/*15. Hacer un programa que determine el m√°ximo com√∫n divisor de dos n√∫meros enteros ‚Äúa‚Äù y ‚Äúb‚Äù  que  se  solicitan  al  usuario  por  teclado
+desde  el main().Dichos  n√∫meros  ser√°n  pasados  a una  funci√≥n,  que  retorna  el  MCD  de  ambos,  y  el main() se  encarga  de  sacar  el  resultado  por pantalla. Si uno de los dos n√∫meros es negativo, se muestra un mensaje de error y no se invoca la funci√≥n:
 int MCD( int a, int b);*/
 int MCD(int a, int b);
 void main() {
@@ -20,16 +20,16 @@ void main() {
 
 }
 int MCD(int a, int b) {
-	int mayor, i, mcd;
+	int menor, i, mcd;
 	if (a < b) {
-		mayor = a;
+		menor= a;
 	}
 	else {
-		mayor = b;
+		menor = b;
 	}
-	for (i = 1; i <= mayor;i++) {
+	for (i = 1; i <= menor;i++) {
 		if (a%i == 0 && b%i == 0) {
-			mcd = i;//guarda el ultimo com˙n, es decir, el m·s mayor, y por tanto el resultado.
+			mcd = i;//guarda el ultimo com√∫n, hasta el menor entre los dos.
 		}
 	}
 	return mcd;
