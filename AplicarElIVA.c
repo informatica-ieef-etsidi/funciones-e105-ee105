@@ -1,4 +1,4 @@
-//Desarrollador: Ana Dueñas
+//Desarrollador: Ana DueÃ±as
 //Programa para aplicar el iva a un producto
 
 
@@ -19,7 +19,7 @@ void main() {
 	}
 
 	preciofinal = iva(precio);
-	printf("El precio con iva seria de %.3f\n", preciofinal);
+	printf("El precio en  con iva seria de %.2f\n", preciofinal);
 	system("PAUSE");
 }
 
