@@ -1,8 +1,9 @@
-// Marcos Vel·zquez Ruiz
+// Marcos Vel√°zquez Ruiz
 
 #include <stdio.h>
 
-int Sumatorio(int n, int a, int b);
+int Sumatorio(int n, int a, int b);
+
 void main() {
 
 	int n, a, b, resultado;
@@ -17,9 +18,15 @@ void main() {
 
 	system("pause");
 }
-int Sumatorio(int n, int a, int b) {		int resultado = 0, suma = 0, i;
+int Sumatorio(int n, int a, int b) {
+	
+	int resultado = 0, suma = 0, i;
+	
 	for (i = a; i<= b; i++) {
 		suma = suma + n*i;
 		resultado = suma;
 
-	}	return resultado;}
+	}
+	return resultado;
+
+}
