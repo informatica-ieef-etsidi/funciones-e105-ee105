@@ -1,3 +1,4 @@
+
 //Paula Arellano
 #include<stdio.h>
 
@@ -9,9 +10,14 @@ void main() {
 	printf("Introduzca un numero entero: ");
 	scanf_s("%d", &numero);
 
-	suma = sumatorioN(numero);
+	if (numero<0)
+		printf("El numero es negrativo.\n);
+	
+	else{
+		suma = sumatorioN(numero);
 
-	printf("\nEl sumatorio de los %d primeros numeros es %d\n", numero, suma);
+		printf("\nEl sumatorio de los %d primeros numeros es %d\n", numero, suma);
+	}
 
 	system("PAUSE");
 }
