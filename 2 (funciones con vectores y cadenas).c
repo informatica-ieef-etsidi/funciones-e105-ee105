@@ -2,7 +2,7 @@
 
 /*
 2. Producto Escalar. Realice un programa para calcular el producto escalar de dos vectores
-introducidos por el usuario. Para ello programe una función con el siguiente prototipo:
+introducidos por el usuario. Para ello programe una funciÃ³n con el siguiente prototipo:
 void PEsc(float vector1[], float vector2[], int dimension, int *pe);
 */
 
@@ -26,12 +26,12 @@ int main() {
 	scanf("%d", &dim);
 
 	for (i = 1; i <= dim; i++) {
-		printf("\nIntroduzca la coordenada %d del vector 1: ", i, vector1[i]);
+		printf("\nIntroduzca la coordenada %d del vector 1: ", i);
 		scanf("%f", &vector1[i]);
 	}
 
 	for (i = 1; i <= dim; i++) {
-		printf("\nIntroduzca la coordenada %d del vector 2: ", i, vector2[i]);
+		printf("\nIntroduzca la coordenada %d del vector 2: ", i);
 		scanf("%f", &vector2[i]);
 	}
 
