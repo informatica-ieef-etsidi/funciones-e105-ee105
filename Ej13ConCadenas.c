@@ -1,8 +1,8 @@
-/*A Mayúsculas. Se pide escribir un programa que pida un texto por teclado (una cadena
-de caracteres). Es texto debe pasarse a una función cambiar_a_mayus, que cambia
-todas las letras minúsculas del texto a mayúsculas. El programa principal mostrará la
-cadena ya cambiada. No se deben tener en cuenta las vocales acentuadas ni las eñes, que
-tiene otros códigos. Para leer la cadena de texto, puede emplearse scanf o gets. */
+/*A MayÃºsculas. Se pide escribir un programa que pida un texto por teclado (una cadena
+de caracteres). Es texto debe pasarse a una funciÃ³n cambiar_a_mayus, que cambia
+todas las letras minÃºsculas del texto a mayÃºsculas. El programa principal mostrarÃ¡ la
+cadena ya cambiada. No se deben tener en cuenta las vocales acentuadas ni las eÃ±es, que
+tiene otros cÃ³digos. Para leer la cadena de texto, puede emplearse scanf o gets. */
 //Hecho sin libreria string.h
 #include <stdio.h>
 void cambiar_a_mayus(char* cadena);
@@ -12,6 +12,7 @@ void main(){
 	gets(texto);
 	cambiar_a_mayus(texto);
 	system("pause");
+	printf("%s\n", texto);
 }
 void cambiar_a_mayus(char* cadena) {
 	int contador = 0, i;
@@ -19,10 +20,10 @@ void cambiar_a_mayus(char* cadena) {
 		contador = contador++;
 	}
 	for (i = 0; i <= contador; i++) {
-		if (cadena[i] >= 97 && cadena[i] <= 122) {
+		if (cadena[i] >= 'a' && cadena[i] <= 'z') {
 			cadena[i] = cadena[i] - 32;//Pasa a mayusculas
 		}
 	
 	}
-	printf("%s\n", cadena);
+	
 }
