@@ -11,8 +11,9 @@ void main(){
 	printf("Introduzca un texto cualquiera y lo pasaremos a mayusculas\n");
 	gets(texto);
 	cambiar_a_mayus(texto);
-	system("pause");
 	printf("%s\n", texto);
+	system("pause");
+	
 }
 void cambiar_a_mayus(char* cadena) {
 	int contador = 0, i;
